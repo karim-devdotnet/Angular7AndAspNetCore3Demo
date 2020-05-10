@@ -1,0 +1,2 @@
+﻿- Database First (scaffolding)
+pm> dotnet ef dbcontext scaffold "server=.\sqlexpress; database=BooksDB; User ID=sa;Password=sa;MultipleActiveResultSets=True" Microsoft.EntityFrameworkCore.SqlServer -o Models
