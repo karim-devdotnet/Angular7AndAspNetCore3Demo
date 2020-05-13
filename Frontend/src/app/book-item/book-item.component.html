@@ -1,0 +1,20 @@
+<form ngForm="form" (submit)="onSubmit()">
+    <input type="hidden" name="id" [(ngModel)] = "service.book.id">
+    <div class="form-group">
+        <label for="title">Title:</label>
+        <input type="text" [(ngModel)]="service.book.title" name="title" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="author">Author:</label>
+        <input type="text" [(ngModel)]="service.book.author" name="author" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="numberOfPages">Number of Pages:</label>
+        <input type="text" [(ngModel)]="service.book.numberOfPages" name="numberOfPages" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="publishedOn">Published On:</label>
+        <input type="text" [(ngModel)]="service.book.publishedOn" name="publishedOn" class="form-control">
+    </div>
+    <input type="submit" value="Save Book" class="btn btn-dark btn-block">
+</form>
