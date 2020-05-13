@@ -6,10 +6,6 @@ namespace BooksAPi.Models
 {
     public partial class BooksDBContext : DbContext
     {
-        public BooksDBContext()
-        {
-        }
-
         public BooksDBContext(DbContextOptions<BooksDBContext> options)
             : base(options)
         {
@@ -17,7 +13,7 @@ namespace BooksAPi.Models
 
         public virtual DbSet<Book> Book { get; set; }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        /*protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
             {
@@ -40,6 +36,6 @@ namespace BooksAPi.Models
             OnModelCreatingPartial(modelBuilder);
         }
 
-        partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
+        partial void OnModelCreatingPartial(ModelBuilder modelBuilder);*/
     }
 }
